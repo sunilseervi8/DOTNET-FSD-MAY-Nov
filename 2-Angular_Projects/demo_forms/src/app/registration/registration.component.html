@@ -1,0 +1,21 @@
+<form [formGroup]="loginForm" (ngSubmit)="validate()">
+    <div>
+        <label for="">UserName</label>
+        <input type="text" formControlName="username">
+    </div>
+    <div *ngIf="!loginForm.valid && (loginForm.controls.username.touched || loginForm.controls.username.dirty)">
+        {{"* Email is required"}}
+    </div>
+    <div>
+        <label for="">PassWord</label>
+        <input type="password" formControlName="password">
+    </div> <div>
+        <label for="">Email</label>
+        <input type="email" formControlName="email">
+    </div>
+    <div>
+      <button>submit </button>
+    </div>
+</form>
+
+

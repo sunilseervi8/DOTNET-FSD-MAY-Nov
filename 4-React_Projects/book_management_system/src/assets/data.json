@@ -1,0 +1,28 @@
+{
+  "user": [
+    {
+      "id": "9db4",
+      "fname": "rohith d",
+      "email": "sunilseervi@outlook.in",
+      "password": "Ak47@m24",
+      "confirmPassword": "Ak47@m24",
+      "userType": "admin"
+    },
+    {
+      "id": "35af",
+      "fname": "rohith d",
+      "email": "sunilseervi@outlook.in",
+      "password": "Ak47@m24",
+      "confirmPassword": "Ak47@m24",
+      "userType": "admin"
+    },
+    {
+      "id": "a491",
+      "fname": "manisha",
+      "email": "manisha@gmail.com",
+      "password": "Manisha@123",
+      "confirmPassword": "Manisha@123",
+      "userType": "user"
+    }
+  ]
+}

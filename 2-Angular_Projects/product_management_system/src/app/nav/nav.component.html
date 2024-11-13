@@ -1,0 +1,44 @@
+<div class="navigationHeader">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  navbar-custom">
+        <div class="container-fluid">
+            <a href="#"><img src="https://img.freepik.com/premium-vector/
+                animal-logo-cuckoo-vector_1271332-4133.jpg" alt="" width="30" height="24" margin-right="2px"></a>
+            <a class="navbar-brand navbar-brand-custom" href="#">Shop<span>now</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    
+                    <li class="nav-item">
+                        <!-- <input type="search"> -->
+                        <a class="nav-link" routerLink="Dashboard">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-cart"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-bell"></i></a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-person"></i></a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="btn btn-outline-dark" (click)="loginSuccessful()" *ngIf="!islogined" routerLink="login">login</a>
+                        <a class="btn btn-outline-dark"  (click)="loginSuccessful()"  *ngIf="islogined" href="logout"> logout</a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>

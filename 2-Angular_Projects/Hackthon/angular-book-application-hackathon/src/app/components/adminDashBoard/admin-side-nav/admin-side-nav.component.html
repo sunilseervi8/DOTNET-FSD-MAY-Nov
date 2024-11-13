@@ -1,0 +1,29 @@
+<div class="body">
+    <!-- admin-sidebar.component.html -->
+  <div >
+    <aside class="sidebar admin-sidebar">
+      <div class="sidebar-header">
+        <h3>Admin Panel</h3>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li>
+            <a routerLink="addBook" routerLinkActive="active">Add Book</a>
+          </li>
+          <li>
+            <a routerLink="view-book" routerLinkActive="active">view Book</a>
+          </li>
+          <li>
+            <a routerLink="edit-book" routerLinkActive="active">Edit Book</a>
+          </li>
+          <li>
+            <a routerLink="editModal" routerLinkActive="active">Delete Book</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+  </div>
+  <div class="content1">
+    <router-outlet></router-outlet>
+  </div>
+</div>

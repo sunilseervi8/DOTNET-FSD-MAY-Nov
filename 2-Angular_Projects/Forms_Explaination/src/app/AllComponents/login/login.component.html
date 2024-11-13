@@ -1,0 +1,23 @@
+<form #formdata="ngForm" onsubmit="">
+    <div>
+        <div>
+            <label>Fname: </label>
+            <input type="text" [(ngModel)]="fname" name="fname">
+        </div>
+        <div>
+            <label for="">Lname: </label>
+            <input type="text" [(ngModel)]="lname" name="lname">
+        </div>
+        <div>
+            <label for="">Email: </label>
+            <input type="text" [(ngModel)]="email" name="email">
+        </div>
+        <div>
+            <label for="">Password: </label>
+            <input type="text" [(ngModel)]="password" name="password">
+        </div>
+        <div>
+            <input type="button" value="Submit">
+        </div>
+    </div>
+</form>

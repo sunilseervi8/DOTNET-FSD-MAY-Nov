@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.image-container{
+    height: 35vh;
+    /* overflow: hidden;/ */
+}

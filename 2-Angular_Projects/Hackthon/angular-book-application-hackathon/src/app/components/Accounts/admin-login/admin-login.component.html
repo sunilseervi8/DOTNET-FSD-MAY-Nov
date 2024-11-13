@@ -1,0 +1,27 @@
+<div class="body">
+    <div class="login-container">
+        <div class="login-header">
+            <h3>Admin Login</h3>
+        </div>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+                  <!-- alert message is invalid class -->
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter username" formControlName="email"
+                [class.is-invalid]="
+                loginForm.get('email')?.invalid &&
+                loginForm.get('email')?.touched" />
+            </div>
+           
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter password" formControlName="password"
+                [class.is-invalid]="
+                loginForm.get('password')?.invalid &&
+                loginForm.get('password')?.touched" />
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+</div>

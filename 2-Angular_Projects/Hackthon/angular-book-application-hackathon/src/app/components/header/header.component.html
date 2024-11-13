@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+        <img src="" alt="">
+      <a class="navbar-brand" href="#"><i class="bi bi-house-add-fill"></i>&nbsp;Smiles Store</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">User</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/adminDashboard">admin</a>
+          </li>
+          
+        </ul>
+        <form class="d-flex">
+          <button class="btn btn-login me-2" routerLink="/login" >Login</button>
+          <button class="btn btn-login me-2"  *ngIf="isLoggedIn"   routerLink="/login" >logout</button>
+
+          <button class="btn btn-register"  routerLink="register" >Register</button>
+        </form>
+      </div>
+    </div>
+  </nav>

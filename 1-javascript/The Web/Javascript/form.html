@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <STYle>
+        #dog {
+            background-color: brown;
+            color: black;
+        }
+    </STYle>
+</head>
+
+<body>
+    <h4>Form validate </h4>
+    <ul>
+        <li>client side validation</li>
+        <li>server side validation</li>
+
+    </ul>
+    <div>
+        <h3> Checkbox</h3>
+        <p>
+            They are used to let a user select one or more options of a limited number of choices. <br>
+            [ input type="checkbox" id="dog" name="dog" value="Dog"] 
+        </p>
+        <input type="checkbox" id="dog" name="dog" value="Dog">
+        <label for="dog"name="dog" >I like dogs</label>
+        <input type="checkbox" id="cat" name="cat"  value="Cat">
+        <label for="cat">I like cats</label>
+    </div>
+    <div>
+        <h3>Radio</h3>
+        Displays a radio button, allowing only a single value to be selected out of multiple choices.
+        <b>the same "name" attribute</b>. <br>
+        <i>[ input type="radio" id="light" name="theme" value="Light" ]</i>  <br>
+        
+        <input type="radio" name="teme" id="light" value="light">
+        <label for="light">Light theme</label>
+        <input type="radio" name="teme" id="dark" value="dark">
+        <label for="light">Dark theme</label>
+
+    </div>
+    <div>
+        In the same way we have 
+        <ul>
+            <li>type submit</li>
+            <li> Reset</li>
+            <li>email</li>
+            <li>password</li>
+            <li> date</li>
+            <li>url</li>
+             <li>file</li>
+             <li>tel</li>
+             <li>time</li>
+             <li>search</li>
+        </ul>       
+    </div>
+    <div>
+       <h2>Demo of some the form</h2>
+       <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+        <br><br>
+
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" name="volume" min="0" max="10">
+        <br><br>
+
+        <label for="gsearch">Search in Google:</label>
+        <input type="search" id="gsearch" name="gsearch">
+        <br><br>
+
+        <label for="appt">Select a time:</label>
+        <input type="time" id="appt" name="appt">
+        <br><br>
+
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile">
+        <br><br>
+
+        <input type="hidden" id="custId" name="custId" value="3487">
+         
+        <label for="bdaymonth">Birthday (month and year):</label>
+        <input type="month" id="bdaymonth" name="bdaymonth" min="1930-01" value="2000-01">
+        <br><br>
+
+        <label for="phone">Enter your phone number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}">
+        <br><br>
+    </div>
+    <div>
+        <button><a href="metaTag.html">previous</a></button>
+        <button><a href="form1.html">continuos form notes</a></button>
+        
+    </div>
+    
+</body>
+
+</html>

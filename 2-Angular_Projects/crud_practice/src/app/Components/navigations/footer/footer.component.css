@@ -1,0 +1,9 @@
+.footer {
+    /* position: fixed; */
+    /* bottom: 0; */
+    width: 100%;
+    background-color: #00246B; /* Dark Blue */
+    color: #EDE8F5; /* Light Text */
+    text-align: center;
+    padding: 10px 0;
+  }

@@ -1,0 +1,67 @@
+<!-- add-book.component.html -->
+<div class="form-container">
+  <div class="container mt-5">
+    <h2>Add Book</h2>
+    <form [formGroup]="addBookForm" (ngSubmit)="onSubmit()" novalidate>
+      <!-- Book Name -->
+      <div class="mb-3">
+        <label for="bookName" class="form-label">Book Name</label>
+        <input type="text" id="bookName" class="form-control" formControlName="bookName" placeholder="Enter book name" required>
+      </div>
+      
+      <!-- Author Name -->
+      <div class="mb-3">
+        <label for="authorName" class="form-label">Author Name</label>
+        <input type="text" id="authorName" class="form-control" formControlName="authorName" placeholder="Enter author name" required>
+      </div>
+      
+      <!-- Categories -->
+      <div class="mb-3">
+        <label for="categories" class="form-label">Categories</label>
+        <textarea id="categories" class="form-control" formControlName="categories" placeholder="Enter categories, separated by commas" rows="3"></textarea>
+      </div>
+      
+      <!-- Book Image URL -->
+      <div class="mb-3">
+        <label for="bookImage" class="form-label">Book Image URL</label>
+        <input type="text" id="bookImage" class="form-control" formControlName="bookImage" placeholder="Enter book image URL">
+      </div>
+      
+      <!-- Publish Year -->
+      <div class="mb-3">
+        <label for="publishYear" class="form-label">Publish Year</label>
+        <input type="number" id="publishYear" class="form-control" formControlName="publishYear" placeholder="Enter publish year" required>
+      </div>
+      
+      <!-- Edition -->
+      <div class="mb-3">
+        <label for="edition" class="form-label">Edition</label>
+        <input type="text" id="edition" class="form-control" formControlName="edition" placeholder="Enter edition">
+      </div>
+      
+      <!-- Language -->
+      <div class="mb-3">
+        <label for="language" class="form-label">Language</label>
+        <input type="text" id="language" class="form-control" formControlName="language" placeholder="Enter language">
+      </div>
+      
+      <!-- Extension -->
+      <div class="mb-3">
+        <label for="extension" class="form-label">Extension</label>
+        <select id="extension" class="form-control" formControlName="extension">
+          <option value="pdf">PDF</option>
+          <option value="word">Word</option>
+          <option value="video">Video</option>
+        </select>
+      </div>
+      
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-primary" [disabled]="addBookForm.invalid">Add Book</button>
+    </form>
+    
+    <!-- Success message -->
+    <div *ngIf="submitted && addBookForm.valid" class="alert alert-success mt-3">
+      Book added successfully!
+    </div>
+  </div>
+</div>

@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "id": "f6fa",
+      "fname": "asfasdf",
+      "lname": "sdafasdf",
+      "gender": "asdfasdfsad",
+      "email": "fasdfsd",
+      "dob": "2222-02-02",
+      "password": "fvdfsgasdfasdfasd"
+    },
+    {
+      "id": "a458",
+      "fname": "asfasdf",
+      "lname": "sdafasdf",
+      "gender": "asdfasdfsad",
+      "email": "fasdfsd",
+      "dob": "2222-02-02",
+      "password": "fvdfsgasdfasdfasd"
+    },
+    {
+      "id": "c53a",
+      "fname": "asfasdf",
+      "lname": "sdafasdf",
+      "gender": "asdfasdfsad",
+      "email": "fasdfsd",
+      "dob": "2222-02-02",
+      "password": "fvdfsgasdfasdfasd"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "50cd",
+      "tittle": "dfasfsasdf",
+      "description": "asdfsadfsadfdsf",
+      "status": "safdfsadfasdf",
+      "date": "2024-08-28"
+    },
+    {
+      "id": "823c",
+      "tittle": "sadfafasdfs",
+      "description": "aasdfasdfsadf",
+      "status": "dsafasdfasdf",
+      "date": "2024-08-28"
+    },
+    {
+      "id": "fb5c",
+      "tittle": "Angular Components ",
+      "description": "do the components on the login and registration ",
+      "status": "assigned",
+      "date": "2024-09-04"
+    }
+  ]
+}

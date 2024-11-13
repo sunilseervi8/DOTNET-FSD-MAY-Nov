@@ -1,0 +1,9 @@
+<h1>Welcome</h1>
+<form action="" #loginData="ngForm" [ngClass]="isSucces ?'form1':'form2'">
+  <label for="">UserName</label>
+  <input type="text" name="userName" [(ngModel)]="userName"id="" required>
+  <label for="">Password </label>
+  <input type="password" name="password" [(ngModel)]="password">
+  <button type="submit " (click)="signUp(loginData)">Submit</button>
+</form>
+<!-- instead the click we can add the onSubmit in the form tag -->

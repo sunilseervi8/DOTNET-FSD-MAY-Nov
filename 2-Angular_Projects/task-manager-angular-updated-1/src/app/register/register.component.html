@@ -1,0 +1,54 @@
+<div class="example-container">
+
+    <form #registerForm="ngForm" (ngSubmit)="registerForm.valid && onRegister(registerForm)">
+        <h1>New user Registeration</h1>
+        <!-- fanme -->
+        <div>
+            <label>Fname</label>
+            <input type="text" placeholder="Enter FName" id="txt_fname" name="fname" [(ngModel)]="userData.fname"
+                required #fname="ngModel" minlength=6>
+            <div class="div-error" *ngIf="fname.touched && !fname.valid">Fname is Missing</div>
+        </div>
+        <!-- lname -->
+        <div>
+            <label>LName</label>
+            <input type="text" placeholder="Enter Lname" id="txt_lnaeme" name="lname" [(ngModel)]="userData.lname"
+                required #lname="ngModel">
+            <div class="div-error" *ngIf="!lname.valid && lname.touched">Lname is Required</div>
+        </div>
+
+        <!-- gender -->
+        <div>
+            <label>Gender</label>
+            <input type="text" placeholder="Enter Gender" id="txt_gender" name="gender" [(ngModel)]="userData.gender"
+                required #gender="ngModel">
+            <div class="div-error" *ngIf="!gender.valid && gender.touched">Gender is Required</div>
+        </div>
+        <!-- email -->
+        <div>
+            <label>Email</label>
+            <input type="email" placeholder="Enter email" id="txt_Email" name="email" [(ngModel)]="userData.email"
+                required #email="ngModel">
+            <div class="div-error" *ngIf="!email.valid &&( email.touched || email.dirty)">Gender is Required</div>
+        </div>
+        <!-- dob -->
+        <div>
+            <label>DoB</label>
+            <input type="date" placeholder="Enter dob" id="txt_dob" name="dob" [(ngModel)]="userData.dob" required
+                #dob="ngModel">
+            <div class="div-error" *ngIf="!dob.valid && dob.touched">Gender is Required</div>
+        </div>
+        <!-- password -->
+        <div>
+            <label>password</label>
+            <input type="password" placeholder="Enter [password]" name="password" id="txt_password"
+                [(ngModel)]="userData.password" #password="ngModel" required>
+            <div class="div-error" *ngIf="!password.valid && password.touched">Gender is Required</div>
+
+        </div>
+        <div>
+            <button>Register</button>
+        </div>
+
+    </form>
+</div>

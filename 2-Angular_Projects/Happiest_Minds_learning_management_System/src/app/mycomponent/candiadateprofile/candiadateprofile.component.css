@@ -1,0 +1,21 @@
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.example-sidenav{
+    width: 200px;
+    /* background-color: rgb(84, 131, 172); */
+    color: white;
+    height: 100vh;
+
+}
+.example-main
+{
+    /* background-color: rgb(84, 172, 121); */
+    color: white;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}

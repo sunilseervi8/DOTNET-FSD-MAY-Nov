@@ -1,0 +1,28 @@
+{
+  "User": [
+    {
+      "id": "8603",
+      "fname": "swsd",
+      "lname": "swsw",
+      "email": "sunilsabka88@gmail.com",
+      "password": "ws",
+      "conPassword": "dw"
+    },
+    {
+      "id": "d3b4",
+      "fname": "Sunil",
+      "lname": "Seervi",
+      "email": "sunilsabka88@gmail.com",
+      "password": "qss",
+      "conPassword": "dqwdwd"
+    },
+    {
+      "id": "0395",
+      "fname": "Sunil",
+      "lname": "Seervi",
+      "email": "sunilsabka88@gmail.com",
+      "password": "wddw",
+      "conPassword": "dw"
+    }
+  ]
+}

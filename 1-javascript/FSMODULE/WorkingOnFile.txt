@@ -1,0 +1,26 @@
+server can serve the data
+web accessing thriugh the web server 
+get
+post 
+put 
+delete
+patch
+ 
+send the request and 
+http end point 
+json file json server  :
+througth the htpp end point 
+1 crestethe file 
+2 create the json server 
+3 or call the json at the runtime
+4 npx node package runner \
+5. node -v
+6  live server 
+7 json server
+8 live-server cammnd to run 
+9 json-server for json server
+
+10 easy wway to includ axios
+json-server story.json -p 4000
+
+npx is temporatory or runtion is without installing the data

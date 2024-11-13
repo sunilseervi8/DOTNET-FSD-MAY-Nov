@@ -1,0 +1,31 @@
+{
+  "movies": [
+    {
+      "id": 476307,
+      "title": "Shang-Chi and the Legend of the Ten Rings",
+      "posterPath": "https://image.tmdb.org/t/p/original//6t8ES1d12OzWyCGxBeDYLHoaDrT.jpg"
+    },
+    {
+      "id": 27621,
+      "title": "Avengers: Infinity War",
+      "posterPath": "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_.jpg"
+    },
+    {
+      "id": 474350,
+      "title": "The battleship",
+      "posterPath": "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p8777089_p_v13_aq.jpg"
+    }
+  ],
+  "favourites": [
+    {
+      "id": 476307,
+      "title": "Shang-Chi and the Legend of the Ten Rings",
+      "posterPath": "https://image.tmdb.org/t/p/original//6t8ES1d12OzWyCGxBeDYLHoaDrT.jpg"
+    },
+    {
+      "id": 27621,
+      "title": "Avengers: Infinity War",
+      "posterPath": "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_.jpg"
+    }
+  ]
+}

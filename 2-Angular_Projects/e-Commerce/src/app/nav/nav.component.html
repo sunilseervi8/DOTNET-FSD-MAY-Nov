@@ -1,0 +1,37 @@
+<div>
+    <ul ngbNav #nav="ngbNav"  [activeId]="1" class="nav-tabs bg-dark  justify-content-center">
+        <li [ngbNavItem]="1">
+            <button ngbNavLink ><a href="home">Home</a></button>
+            
+        </li>
+        <li [ngbNavItem]="2">
+            <button ngbNavLink><b>Fancy</b> title</button>
+            
+        </li>
+        <li ngbDropdown class="nav-item" role="presentation">
+            <button type="button" class="nav-link" ngbDropdownToggle>Dropdown</button>
+            <div ngbDropdownMenu>
+                <button ngbDropdownItem>Action</button>
+                <button ngbDropdownItem>Another action</button>
+                <button ngbDropdownItem>Something else here</button>
+                <div class="dropdown-divider"></div>
+                <button ngbDropdownItem>Separated link</button>
+            </div>
+        </li>
+        <li ngbNavItem [disabled]="false" class="ms-auto">
+            <button ngbNavLink>Login</button>
+            
+        </li>
+        <li>
+            <form class="d-flex" role="search">
+            <input class="form-control me-2"(input)="search($event)"  type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+          </form>
+        </li>
+    </ul>
+    
+    <div [ngbNavOutlet]="nav" class="mt-2"></div>
+</div>
+<div class="search" >
+    <h1>Searched for"{{searchedData}}"</h1>
+</div>

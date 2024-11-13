@@ -1,0 +1,44 @@
+{
+  "Candidate": [
+    {
+      "fname": "rohith d",
+      "email": "rohith@gmail.com",
+      "phone": 987655678,
+      "dob": "0111-11-11",
+      "qualification": "12th/HSC",
+      "degree": "BBA",
+      "stream": "ME",
+      "percentage": "",
+      "cgpa": 223,
+      "select": "cgpa",
+      "id": "c87d"
+    },
+    {
+      "id": "6f23",
+      "fname": "Sunil Seervi",
+      "email": "sunilsabka88@gmail.com",
+      "phone": 8660771074,
+      "dob": "2024-09-11",
+      "qualification": "12th/HSC",
+      "degree": "M.Ed",
+      "stream": "Arts",
+      "percentage": 33,
+      "cgpa": "",
+      "select": "percentage"
+    }
+  ],
+  "SignUp": [
+    {
+      "id": "05fe",
+      "email": "sunilsabka88@gmail.com",
+      "password": "Aishu@1234",
+      "confirmPassword": "Aishu@1234"
+    },
+    {
+      "id": "ef67",
+      "email": "rohith@gmail.com",
+      "password": "rohichai@123",
+      "confirmPassword": "rohichai@123"
+    }
+  ]
+}

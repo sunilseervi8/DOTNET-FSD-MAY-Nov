@@ -1,0 +1,42 @@
+{
+  "Routes": [
+    {
+
+      "DownstreamPathTemplate": "/api/course/{course}",
+      "DownstreamScheme": "https",
+    
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7240
+        }
+      ],
+      "UpstreamPathTemplate": "/api/course/{course}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+    {
+
+      "DownstreamPathTemplate": "/api/user/{user}",
+      "DownstreamScheme": "https",
+     
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7045
+        }
+      ],
+      "UpstreamPathTemplate": "/api/user/{user}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT","DELETE"]
+    }
+
+
+  ],
+  "GlobalConfiguration": {
+    "ServiceDiscoveryProvider": {
+      "Host": "localhost",
+      "Port": 8500,
+      "Type": "Consul"
+    }
+  }
+
+}

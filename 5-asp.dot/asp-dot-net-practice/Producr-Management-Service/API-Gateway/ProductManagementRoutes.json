@@ -1,0 +1,20 @@
+{
+  "Routes": [
+    
+      //confire gateway fo the account service
+      {
+        "DownstreamPathTemplate": "/",
+        "DowmstreamSchema": "https",
+        "DownstreamHostAndPort": [
+          {
+            "Host": "localhost",
+            "Port": 7098
+          }
+        ],
+        "UpstreamPathTemplate": "/gateway/accounts",
+        "UpstreamHttpMethod": [ "Get" ]
+
+      
+    }
+  ]
+}

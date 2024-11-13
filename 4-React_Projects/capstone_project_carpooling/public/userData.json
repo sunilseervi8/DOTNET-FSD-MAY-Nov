@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "id": "4444",
+      "fullName": "Sunil Seervi",
+      "email": "sunilsabka88@gmail.com",
+      "password": "Ak47+m24",
+      "confirmPassword": "Ak47+m24"
+    },
+    {
+      "id": "6288",
+      "fullName": "Sunil Seervi",
+      "email": "sunilsabka88@gmail.com",
+      "password": "Sunil@123",
+      "confirmPassword": "Sunil@123"
+    },
+    {
+      "id": "e095",
+      "fullName": "Sunil Seervi",
+      "email": "sunilsabka88@gmail.com",
+      "password": "Ak47+m24",
+      "confirmPassword": "Ak47+m24"
+    },
+    {
+      "id": "a2a0",
+      "fullName": "Sunil Seervi",
+      "email": "sunilsabka88@gmail.com",
+      "password": "Ak47+m24",
+      "confirmPassword": "Ak47+m24"
+    },
+    {
+      "id": "0c66",
+      "fullName": "Sunil Seervi",
+      "email": "sunilsabka88@gmail.com",
+      "password": "Sunil@123",
+      "confirmPassword": "Sunil@123"
+    },
+    {
+      "id": "5e36",
+      "fullName": "Sunil Seervi",
+      "email": "sunilsabka88@gmail.com",
+      "password": "Ak47+m24",
+      "confirmPassword": "Ak47+m24"
+    },
+    {
+      "id": "ae33",
+      "fullName": "Sunil Seervi",
+      "email": "sunilsabka88@gmail.com",
+      "password": "Ak47+m24",
+      "confirmPassword": "Ak47+m24"
+    }
+  ]
+}

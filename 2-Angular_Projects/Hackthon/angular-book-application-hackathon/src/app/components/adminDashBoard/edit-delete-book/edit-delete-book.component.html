@@ -1,0 +1,110 @@
+<!-- Table with Books -->
+<div class="container body mt-5">
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Book Image</th>
+                    <th scope="col">Book Name</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">Categories</th>
+                    <th scope="col">Publish Year</th>
+                    <th scope="col">Edition</th>
+                    <th scope="col">Language</th>
+                    <th scope="col">Extension</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let book of books; let i = index">
+                    <th scope="row">{{ i + 1 }}</th>
+                    <!-- Book Image -->
+                    <td>
+                        <img [src]="book.bookImage" alt="Book Image" class="book-table-img" *ngIf="book.bookImage">
+                    </td>
+                    <!-- Book Name -->
+                    <td>{{ book.bookName }}</td>
+                    <!-- Author Name -->
+                    <td>{{ book.authorName }}</td>
+                    <!-- Categories -->
+                    <td>{{ book.categories }}</td>
+                    <!-- Publish Year -->
+                    <td>{{ book.publishYear }}</td>
+                    <!-- Edition -->
+                    <td *ngIf="book.edition">{{ book.edition }}</td>
+                    <td *ngIf="!book.edition">N/A</td>
+                    <!-- Language -->
+                    <td *ngIf="book.language">{{ book.language }}</td>
+                    <td *ngIf="!book.language">N/A</td>
+                    <!-- Extension -->
+                    <td>{{ book.extension | titlecase }}</td>
+                    <!-- Action Buttons -->
+                    <td>
+                        <a href="#" (click)="deleteBook(book.id)" class="btn btn-danger">Delete</a>
+                    </td>
+                    <td>
+                        <a href="#" (click)="deleteBook(book.id)" class="btn btn-danger">Edit</a>
+                    </td>
+                    <!-- <td>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" [attr.data-bs-target]="'#editModal'+i">Edit</a>
+                    </td> -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Modal Template -->
+<div *ngFor="let book of books; let i = index">
+    <div class="modal fade" [id]="'editModal' + i" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Edit Book Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form [formGroup]="bookForms[i]">
+                        <div class="mb-3">
+                            <label for="bookName{{i}}" class="form-label">Book Name</label>
+                            <input type="text" class="form-control" id="bookName{{i}}" formControlName="bookName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="authorName{{i}}" class="form-label">Author Name</label>
+                            <input type="text" class="form-control" id="authorName{{i}}" formControlName="authorName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="categories{{i}}" class="form-label">Categories</label>
+                            <input type="text" class="form-control" id="categories{{i}}" formControlName="categories">
+                        </div>
+                        <div class="mb-3">
+                            <label for="bookImage{{i}}" class="form-label">Book Image URL</label>
+                            <input type="text" class="form-control" id="bookImage{{i}}" formControlName="bookImage">
+                        </div>
+                        <div class="mb-3">
+                            <label for="publishYear{{i}}" class="form-label">Publish Year</label>
+                            <input type="text" class="form-control" id="publishYear{{i}}" formControlName="publishYear">
+                        </div>
+                        <div class="mb-3">
+                            <label for="edition{{i}}" class="form-label">Edition</label>
+                            <input type="text" class="form-control" id="edition{{i}}" formControlName="edition">
+                        </div>
+                        <div class="mb-3">
+                            <label for="language{{i}}" class="form-label">Language</label>
+                            <input type="text" class="form-control" id="language{{i}}" formControlName="language">
+                        </div>
+                        <div class="mb-3">
+                            <label for="extension{{i}}" class="form-label">Extension</label>
+                            <input type="text" class="form-control" id="extension{{i}}" formControlName="extension">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary" (click)="saveChanges(i)">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

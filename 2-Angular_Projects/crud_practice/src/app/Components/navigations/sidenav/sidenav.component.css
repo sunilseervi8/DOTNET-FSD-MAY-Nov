@@ -1,0 +1,28 @@
+.body {
+    padding-top: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .sidebar {
+    height: 100vh;
+    position: fixed;
+  }
+  
+  .sidebar .nav-link {
+    font-size: 1.1rem;
+    padding: 15px;
+    color: #00246B; /* Dark blue */
+  }
+  
+  .sidebar .nav-link.active {
+    background-color: #CADCFC; /* Lighter blue */
+    font-weight: bold;
+  }
+  
+  .sidebar .nav-link:hover {
+    background-color: #EDE8F5; /* Highlight on hover */
+    color: #3D52A0; /* Active color */
+  }
+  

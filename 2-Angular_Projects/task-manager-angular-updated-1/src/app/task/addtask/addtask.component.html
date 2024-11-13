@@ -1,0 +1,44 @@
+<div style="width: 80vw; margin-left: 5vh;">
+    <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+            <mat-panel-title> Add New Task </mat-panel-title>
+            <mat-panel-description> Collect the Task Details </mat-panel-description>
+        </mat-expansion-panel-header>
+       <form  [formGroup]="taskForm" (ngSubmit)=" OnSaveTask()">
+        <!-- tittle -->
+        <div>
+            <label >Tittle</label>
+            <input type="text" placeholder="Enter Task Tittle" formControlName="tittle">
+            <div *ngIf="(taskForm.controls['tittle'].touched || taskForm.controls['tittle'].dirty) && !taskForm.controls['tittle'].valid">
+                *tittle is Required
+            </div>
+        </div>
+        <!-- description -->
+        <div>
+            <label >Description</label>
+            <input type="text" placeholder="Enter Task Description" formControlName="description">
+            <div *ngIf="(taskForm.controls['description'].touched  || !taskForm.controls['description'].valid)&& taskForm.controls['description'].errors?.['required']">
+                *Description is Required
+            </div>
+            <div *ngIf="(taskForm.controls['description'].touched  &&  taskForm.controls['description'].errors?.['minlength']) && !taskForm.controls['description'].valid" >
+                *Description allows max of 10 char
+            </div>
+            
+        </div>
+        <!-- Status -->
+        <div>
+            <label >Status</label>
+            <input type="text" placeholder="Enter Task Status" formControlName="status">
+        </div>
+        <!-- Date -->
+        <div>
+            <label >Date</label>
+            <input type="date" placeholder="Enter Task Assigned Date" formControlName="date">
+        </div>
+
+        <div>
+            <button >Save task</button>
+        </div>
+       </form>
+    </mat-expansion-panel>
+</div>

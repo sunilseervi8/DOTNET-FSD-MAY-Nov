@@ -1,0 +1,122 @@
+    /* Import Google Font */
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    /* Navbar Styles */
+    .navbar-dark .navbar-nav .nav-link {
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .navbar-dark .navbar-nav .nav-link.active {
+        color: #ff4500; /* Active link color (similar to the red in your example) */
+        font-weight: 700;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+        color: #ff4500; /* Hover color */
+    }
+
+    /* Navbar Background and Borders */
+    .navbar-dark {
+        background-color: #222; /* Darker background color */
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Navbar Brand */
+    .navbar-dark .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #ff4500; /* Brand color */
+        text-transform: uppercase;
+    }
+
+    .navbar-dark .navbar-brand:hover {
+        color: white; /* Hover color for brand */
+    }
+
+    /* Toggler Button */
+    .navbar-toggler {
+        border: none;
+        background-color: #8b8b8b8f;
+    }
+
+    .navbar-toggler-icon {
+        color: white;
+    }
+    .custom-btn:hover{
+     background-color: #8b8b8b8f;
+     border-radius: 50%;
+     color: #d2821a;
+    }
+    .custom-btn{
+        background-color: #d2821ab7;
+        color: #4f4e4eea;
+        border-radius: 50%;
+    }
+    .custom-btn-read:hover{
+        background-color: #8b8b8b8f;
+        border-radius: 10px;
+       }
+       .custom-btn-read{
+           background-color: #d2821ab7;
+           border-radius: 10px;
+           
+       }
+       /* home page */
+       .hero-section {
+        background-image: url('https://img.freepik.com/free-photo/3d-earth-planet-shape_23-2151134110.jpg');
+        background-size: cover;
+        background-position: center;
+        color: rgb(0, 0, 0);
+        padding: 150px 0;
+        text-align: center;
+    }
+
+    .hero-section h1 {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .hero-section p {
+        font-size: 1.5rem;
+    }
+    /* cards section */
+    .card {
+        transition: transform 0.3s ease; 
+    }
+    
+    .card:hover {
+        transform: scale(1.05); /* Slight zoom out effect */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    }
+    
+    /* Additional custom styling for the card */
+    .card-title {
+        font-family: 'Poppins', sans-serif; 
+        color: #333;
+    }
+    
+    .card-body {
+        background-color: #f8f9fa;
+    }
+    
+    .btn-readmore {
+        background-color: #dc3545; 
+        border: none;
+    }
+    
+    .btn-readmore:hover {
+        background-color: #c82333; 
+    }
+    .card-img-top {
+        width: 100%;  /* Make sure the image takes up the full width of the card */
+        height: 200px; /* Set a fixed height for the image */
+        object-fit: cover; /* This ensures the image covers the entire area without distortion */
+    }

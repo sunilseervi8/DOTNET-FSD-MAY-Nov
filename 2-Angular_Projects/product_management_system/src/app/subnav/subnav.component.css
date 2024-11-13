@@ -1,0 +1,9 @@
+.navbar-custom{
+    border-bottom: 1px solid black;
+}
+.justify-content-center{
+    display: flex;
+}
+.justify-content-center li{padding-left: 50px;
+   
+}

@@ -1,0 +1,26 @@
+
+<div class="container" >
+    <div class="" *ngFor="let product of products">
+        <div class="">
+            <div class="card" style="width: 18rem;">
+               <div class="image-container"> <img [src]="product.url" class="card-img-top" alt="...">  </div>
+                <div class="card-body">
+                  
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                </div>
+                <ul class="list-group list-group-flush">
+                 <h5>{{product.name}}</h5>
+                  <li class="list-group-item">Color:&emsp; {{product.color}}&emsp;|&emsp; Available </li>
+                  <li class="list-group-item">Price:- {{product.price}}</li>
+                  <li class="list-group-item">Category:- &emsp;{{product.category}}</li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class=" btn btn-outline-dark card-link"><i class="bi bi-cart-plus"></i>cart</a>
+                  <a href="#" class=" btn btn-outline-dark">Buy</a>
+                </div>
+              </div>
+
+        </div>
+
+    </div>
+</div>

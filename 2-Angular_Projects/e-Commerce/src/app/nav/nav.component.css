@@ -1,0 +1,9 @@
+*{
+    text-decoration: none;
+    /* color: ; */
+    margin: 0%;
+}
+.search > h1{
+    font-size: 20px ;
+    background-color: aliceblue;
+}

@@ -1,0 +1,34 @@
+<div class="container mt-3 custom_table" >
+    <table class="table table-bordered table-striped table-responsive">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Date of Birth</th>
+                <th>Qualification</th>
+                <th>Degree</th>
+                <th>Stream</th>
+                <th>Percentage</th>
+                <th>CGPA</th>
+                <th>Delete/Update</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let c of candidateList; let i = index">
+                <td>{{c.fname}}</td>
+                <td>{{c.email}}</td>
+                <td>{{c.phone}}</td>
+                <td>{{c.dob}}</td>
+                <td>{{c.qualification}}</td>
+                <td>{{c.degree}}</td>
+                <td>{{c.stream}}</td>
+                <td>{{c.percentage}}</td>
+                <td>{{c.cgpa}}</td>
+                <td><i class=" btn bi bi-trash3-fill"  (click)="deleteCandidate(i)">
+                </i><i class="btn btn-primary" (click)="updateCandidate()" [routerLink]="['../register1',c.id]">update</i></td>
+            </tr>
+        </tbody>
+        <!-- <button><a routerLink="modal">Add Candidate</a></button> -->
+    </table>
+</div>

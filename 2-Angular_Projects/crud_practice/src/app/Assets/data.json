@@ -1,0 +1,34 @@
+{
+  "user": [
+    {
+      "id": "8b00",
+      "fullName": "Sunil Seervi, Software Engineer",
+      "email": "sunilsabka88@gmail.com",
+      "password": "WDCSAQWDS",
+      "confirmPassword": "CWASXAS"
+    },
+    {
+      "id": "c703",
+      "fullName": "Sunil Seervi",
+      "email": "sunilsabka88@gmail.com",
+      "password": "sadwsd",
+      "confirmPassword": "qwdawas"
+    }
+  ],
+  "task": [
+    {
+      "id": "24c3",
+      "fullName": "Sunil Seervi, Software Engineer",
+      "email": "sunilseervi@outlook.i",
+      "password": "Ak47+m24",
+      "confirmPassword": "Ak47+m24"
+    },
+    {
+      "id": "0d4e",
+      "fullName": "Sunil Seervi",
+      "email": "sunilsabka88@gmail.com",
+      "password": "sdqwdsqwdwqdwqdwqdwq",
+      "confirmPassword": "qwdwqdwqdwqdwqd"
+    }
+  ]
+}

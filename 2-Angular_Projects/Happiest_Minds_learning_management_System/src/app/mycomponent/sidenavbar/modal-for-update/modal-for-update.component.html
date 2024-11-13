@@ -1,0 +1,22 @@
+<div>
+    <button btn btn-primary (click)="openBackDropCustomClass(content)">
+		<a routerLink="register1/" (click)="upDateCandidate()"><i class="bi bi-pencil-square"></i></a></button>
+</div>
+<ng-template #content let-modal>
+	<div class="modal-header">
+		<h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<form>
+			<router-outlet></router-outlet>
+		</form>
+	</div>
+	
+</ng-template>
+
+<!-- <button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button> -->
+
+<hr />
+
+<pre>{{ closeResult }}</pre>

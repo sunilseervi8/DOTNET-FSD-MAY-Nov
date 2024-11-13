@@ -1,0 +1,75 @@
+<section class="body">
+    
+    <div class="container">
+        <div class="form-container">
+            <h2 class="text-center">Registration Form</h2>
+
+            <form  #formData="ngForm" (ngSubmit)="OnSubmitForm(formData)" >
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="dob">Date of Birth</label>
+                        <input type="text" class="form-control" id="dob" placeholder="dd-mm-yyyy">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Gender</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label" for="male">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label" for="female">Female</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="noSay" value="noSay">
+                        <label class="form-check-label" for="noSay">Prefer not to say</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="address1">Street Address</label>
+                    <input type="text" class="form-control" id="address1" placeholder="Street address">
+                </div>
+                <div class="form-group">
+                    <label for="address2">Street Address Line 2</label>
+                    <input type="text" class="form-control" id="address2" placeholder="Street address line 2">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="region">Region</label>
+                        <input type="text" class="form-control" id="region" placeholder="Region">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="city">City</label>
+                        <input type="text" class="form-control" id="city" placeholder="City">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="postalCode">Postal Code</label>
+                        <input type="text" class="form-control" id="postalCode" placeholder="Postal code">
+                    </div>
+                </div>
+                <input type="submit" class="btn btn-danger btn-block" value="submit" >
+                <!-- <button type="submit" class="btn btn-danger btn-block">Submit</button> -->
+            </form>
+        </div>
+    </div>
+   
+</section>

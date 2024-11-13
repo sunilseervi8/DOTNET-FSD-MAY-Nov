@@ -1,0 +1,41 @@
+input
+{
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 5px;
+    border-color: rgb(84, 131, 172);
+
+}
+
+label
+{
+    color: black;
+    height: 30px;
+    margin: 10px;
+}
+button{
+    margin: 10px;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: rgb(84, 131, 172);
+
+}
+select
+{
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 5px;
+    border-color: rgb(84, 131, 172);
+}   
+
+input[type="date"]::-webkit-calendar-picker-indicator
+{
+    background-color: rgb(84, 131, 172);
+    border-radius: 5px;
+    margin: 10px;
+    border-color: rgb(84, 131, 172);
+    
+}

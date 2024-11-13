@@ -1,0 +1,15 @@
+.custom-hero-unit{
+    margin-top: 50px;
+}
+.custom-card{
+    margin-top: 30px;
+}
+.custom-card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    scale: 1.05;
+}
+.custom-title{
+    color: #e65c00;
+    font-weight: 500;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,71 @@
+.body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  /* Sidebar Styling */
+  .sidebar {
+    height: 100vh;
+    /* width: 200px; */
+    background-color: #ff8c00; /* Orange theme */
+    transition: width 0.3s;
+  }
+
+  .sidebar .nav-link {
+    color: #fff;
+    /* padding: 10px 20px; */
+    font-size: 1.1rem;
+    display: flex;
+    /* align-items: center; */
+    transition: background-color 0.3s;
+  }
+
+  .sidebar .nav-link:hover {
+    background-color: #ff6a00;
+  }
+
+  .sidebar .nav-link i {
+    margin-right: 15px;
+  }
+
+  /* Sidebar header */
+  .sidebar-header {
+    /* padding: 15px; */
+    /* text-align: center; */
+    /* background-color: #efab01b7; */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  /* Content Styling */
+  .content {
+    padding: 20px;
+    margin-left: 250px;
+    transition: margin-left 0.3s;
+  }
+
+  /* Hide sidebar on collapse */
+  #sidebarCollapse:checked ~ .sidebar {
+    width: 80px;
+  }
+  
+  #sidebarCollapse:checked ~ .content {
+    margin-left: 80px;
+  }
+
+  #sidebarCollapse:checked ~ .sidebar .nav-link {
+    justify-content: center;
+  }
+  
+  #sidebarCollapse:checked ~ .sidebar .nav-link span {
+    display: none;
+  }
+
+  #sidebarCollapse:checked ~ .sidebar-header {
+    display: none;
+  }
+
+  .collapse1{
+    margin-top:33vh;
+  }

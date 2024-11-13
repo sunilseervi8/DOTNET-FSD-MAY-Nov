@@ -1,0 +1,26 @@
+<div class="container mt-5">
+    <h2 class="mb-4">User Details</h2>
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th>ID</th>
+          <th>Full Name</th>
+          <th>Email</th>
+          <th>Password</th>
+          <th>Confirm Password</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.id }}</td>
+          <td>{{ user.fullName }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.password }}</td>
+          <td>{{ user.confirmPassword }}</td>
+          <td><button (click)="deleteUser(user.id)">delete</button>&nbsp;
+             <button [routerLink]="['edit',user.id]">edit</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

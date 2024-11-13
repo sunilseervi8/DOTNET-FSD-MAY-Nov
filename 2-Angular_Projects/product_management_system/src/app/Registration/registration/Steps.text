@@ -1,0 +1,30 @@
+Step 1
+create the form
+                then add ngSubmit() event bindinng to the 
+                add method let say onSubmitForm(_)
+step 2 
+ create the 
+               a)  template variable let say #formData:-
+                directly reference and interact with a DOM element. This is particularly useful 
+                for getting values from input fields or interacting with specific elements without
+                 relying on Angular's data binding.
+                b) adding the the ngModule:-we need reference to the accessed dom valued 
+
+                 OnSubmitForm(form:HTMLFormElement){// example #formData variable binds forms data
+                   console.log(form)
+                }
+
+                  OnSubmitForm(form:NgForm){ // ngMOdule bind the value from the display on the console
+                    console.log(form)
+                  }
+here is @viewChils Method is used to acces particular dom element || instaed of passing the valued th etemplate directly acces in the component and used the value 
+
+Step 3 reding values
+               1.1 a) usinfg the controles
+                   b) using the value object 
+               1.2 a) name is required to bind the input to to particular dom element
+                   b)ngModule to bind the name data to the form
+step 4 Accessing the values 
+               a) LOG(this.form.value.firstname)
+               b)log(this.form.controles['firstname'].value)
+            

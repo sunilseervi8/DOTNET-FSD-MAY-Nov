@@ -1,0 +1,24 @@
+<div class="wrapper">
+    <aside class="example-sidenav">
+        <h6>Task Manager</h6>
+        <!-- <ul> -->
+            <!-- <li> -->
+                <button mat-icon-button  class="example-icon" aria-label="Example icon-button with heart icon">
+                <mat-icon>
+                    <a routerLink="addtask">add_taskk</a>
+                </mat-icon>
+                </button>
+            <!-- </li> -->
+            <button mat-icon-button  aria-label="Example icon-button with heart icon">
+                
+                <mat-icon>
+                    <a routerLink="viewtask">task</a>
+                </mat-icon>
+            </button>
+        <!-- </ul> -->
+    </aside>
+    <main class="example-main">
+        <p>Manage Task</p>
+        <router-outlet></router-outlet>
+    </main>
+</div>

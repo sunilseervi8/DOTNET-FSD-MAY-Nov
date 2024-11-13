@@ -1,0 +1,29 @@
+.navbar-custom {
+    background-color: #00246B; /* Dark Blue */
+  }
+  .navbar-custom .navbar-brand, 
+  .navbar-custom .nav-link, 
+  .navbar-custom .btn {
+    color: #EDE8F5; /* Light text */
+  }
+  .navbar-custom .nav-link:hover, 
+  .navbar-custom .btn:hover {
+    color: #7091E6; 
+  }
+  .navbar-custom .btn-login {
+    background-color: #CADCFC; 
+    color: #00246B;
+    border: none;
+  }
+  .navbar-custom .btn-login:hover {
+    background-color: #ADBBD9; 
+    color: #00246B;
+  }
+  .navbar-custom .btn-register {
+    background-color: #7091E6;
+    color: white;
+    border: none;
+  }
+  .navbar-custom .btn-register:hover {
+    background-color: #3D52A0;
+  }

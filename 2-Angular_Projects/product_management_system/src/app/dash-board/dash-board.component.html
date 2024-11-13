@@ -1,0 +1,23 @@
+<div>
+  
+    <form [formGroup]="loginForm" (ngSubmit)="validateUser()">
+        <h1>Login</h1>
+        <div>
+            <label for="email" >Email</label>
+            <input formControlName="email" placeholder="email" id="email" >
+            <span *ngIf="!loginForm.valid && (loginForm.controls.email.touched || loginForm.controls.email.dirty)" >
+                {{"Email is required"}}
+            </span>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input formControlName="password" placeholder="password">
+            <span *ngIf="!loginForm.valid &&(loginForm.controls.password.touched || loginForm.controls.password.dirty)" >
+                {{"Email is required"}}
+            </span>
+        </div>
+        <div>
+            <button >Login</button>
+        </div>
+    </form>
+</div>

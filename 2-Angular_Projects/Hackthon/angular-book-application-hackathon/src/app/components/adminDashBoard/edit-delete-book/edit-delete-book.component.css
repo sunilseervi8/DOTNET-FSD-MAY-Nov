@@ -1,0 +1,87 @@
+.body{
+    overflow: scroll;
+}
+img{
+    height:50px ;
+    width: 50px;
+}
+.btn{
+    background-color: #00246b;
+    color:white
+}
+.btn:hover{
+    color:#00246b;
+    background-color: white;
+
+}
+
+/* Customizing Close Button in Modal */
+.btn-close {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+.btn-close:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/* Modal Transition for Smooth Appearance */
+.modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark backdrop */
+}
+/* Responsive Image in Modal */
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Modal Styling */
+.modal-dialog {
+    max-width: 600px; /* Adjust width of the modal */
+}
+
+.modal-header {
+    background-color: #00246B; /* Dark Blue header background */
+    color: white;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+.modal-footer {
+    justify-content: space-between;
+}
+
+.modal-footer .btn-primary {
+    background-color: #7091E6; /* Light Blue for Save Button */
+    border-color: #7091E6;
+}
+
+.modal-footer .btn-primary:hover {
+    background-color: #3D52A0; /* Dark Blue on hover */
+    border-color: #3D52A0;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #adb5bd; /* Secondary button grey */
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+/* Form Inputs Inside Modal */
+.modal-body .form-control {
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid #CADCFC;
+}

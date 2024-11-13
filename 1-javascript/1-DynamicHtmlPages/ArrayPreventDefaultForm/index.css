@@ -1,0 +1,24 @@
+body{
+ margin: 0;
+ padding: 0;
+ text-align: center;
+ background-color: rgba(38, 36, 34, 0.55);
+}
+form{
+    margin-top: 20%;
+}
+form #name{
+    height: 40px;
+    width: 500px;
+    margin-bottom: 10px;
+}
+ input[type='submit'] {
+    height: 45px;
+    width: 502px;
+    margin-bottom: 40px;
+}
+
+li{
+    background-color: #fff;
+    border: 0.8px solid black;
+}

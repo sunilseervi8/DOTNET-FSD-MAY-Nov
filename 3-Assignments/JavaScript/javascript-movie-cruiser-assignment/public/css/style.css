@@ -1,0 +1,12 @@
+body{
+	margin: 0;
+    background: linear-gradient(45deg, #ffae00, #b31684f4 5%, #1bbebeeb 65%, #d06a10 100%);
+}
+.container{
+	list-style-type: none;
+	text-decoration: none;
+}
+.container >li{
+	list-style-type: none;
+	text-decoration: none;
+}

@@ -1,0 +1,29 @@
+.navbar-custom {
+    background-color: #00246B; /* Dark Blue */
+  }
+  .navbar-custom .navbar-brand, 
+  .navbar-custom .nav-link, 
+  .navbar-custom .btn {
+    color: #EDE8F5; /* Light text */
+  }
+  .navbar-custom .nav-link:hover, 
+  .navbar-custom .btn:hover {
+    color: #7091E6; /* Lighter Blue */
+  }
+  .navbar-custom .btn-login {
+    background-color: #CADCFC; /* Lighter Background for buttons */
+    color: #00246B; /* Dark text for contrast */
+    border: none;
+  }
+  .navbar-custom .btn-login:hover {
+    background-color: #ADBBD9; /* Hover color for button */
+    color: #00246B;
+  }
+  .navbar-custom .btn-register {
+    background-color: #7091E6; /* Blue background for Register */
+    color: white;
+    border: none;
+  }
+  .navbar-custom .btn-register:hover {
+    background-color: #3D52A0; /* Darker hover for Register */
+  }

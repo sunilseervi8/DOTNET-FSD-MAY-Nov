@@ -1,0 +1,92 @@
+{
+  "user": [
+    {
+      "id": "c729",
+      "fname": "Sunil",
+      "email": "sunilsabka88@gmail.com",
+      "password": "Ak47+m24"
+    },
+    {
+      "id": "a49e",
+      "fname": "Sunil",
+      "email": "sunilsabka88@gmail.com",
+      "password": "Ak47+m24"
+    },
+    {
+      "id": "9023",
+      "fname": "Sunil",
+      "email": "sunilseervi@ou",
+      "password": ""
+    },
+    {
+      "id": "a392",
+      "fname": "Sunil",
+      "email": "sunilseervi@outlook.in",
+      "password": "Ak47+m24"
+    },
+    {
+      "id": "2b18",
+      "fname": "Sunil",
+      "email": "sunilsabka88@gmail.com",
+      "password": "wqdqwdwq"
+    },
+    {
+      "id": "65ae",
+      "user": [
+        {
+          "id": "c729",
+          "fname": "Sunil",
+          "email": "sunilsabka88@gmail.com",
+          "password": "Sunil@123"
+        }
+      ]
+    },
+    {
+      "id": "331e",
+      "user": [
+        {
+          "id": "c729",
+          "fname": "Sunil",
+          "email": "sunilsabka88@gmail.com",
+          "password": "Sunil@123"
+        }
+      ]
+    },
+    {
+      "id": "33a3",
+      "fname": "Sunil",
+      "email": "sunilseervi@outlook.in",
+      "password": "wjdhwquodhowqd"
+    }
+  ],
+  "data": [
+    {
+      "id": "562a",
+      "source": {
+        "id": "the-verge",
+        "name": "The Verge"
+      },
+      "author": "Antonio G. Di Benedetto",
+      "title": "HP OmniBook X 14 review: a barely disguised business laptop with excellent battery life",
+      "description": "HP’s Snapdragon-powered OmniBook X 14 is a thin-and-light productivity laptop with big battery life, but others like Microsoft’s Surface Laptop 7 are more fun.",
+      "url": "https://www.theverge.com/24215638/hp-omnibook-x-14-laptop-review",
+      "urlToImage": "https://cdn.vox-cdn.com/thumbor/eZVUahGEVKR880nnNWJV2edIHes=/0x0:2040x1360/1200x628/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/25572450/080124_HP_OmniBook_X_ADiBenedetto_0002.jpg",
+      "publishedAt": "2024-08-15T13:00:00Z",
+      "content": "This Snapdragon-powered laptop is a productivity machine, but unless work foots the bill, you can do better. \r\nByAntonio G. Di Benedetto, a writer covering tech deals and The Verges Deals newsletter,… [+8197 chars]"
+    },
+    {
+      "id": "ee31",
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": null,
+      "title": "PM to say Parliament return not 'business as usual'",
+      "description": "The prime minister will make a speech in Downing Street before Parliament returns next week.",
+      "url": "https://www.bbc.com/news/articles/clyn01p5npgo",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/4417/live/7d166480-63d8-11ef-a1ed-85b6b81afc59.jpg",
+      "publishedAt": "2024-08-26T21:30:02Z",
+      "content": "The PM will promise \"no more politics of performance, papering over the cracks, or division and distraction\"\r\nSir Keir Starmer will say on Tuesday that \"it will not be business as usual\" when Parliam… [+3764 chars]"
+    }
+  ]
+}
